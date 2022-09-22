@@ -39,8 +39,10 @@
                     <dateField id="licenseExpiryDateField" property="license.expiryDate"/>
                     <fileUpload id="photoUpload" property="photo" showFileName="true"
                                 uploadButtonIcon="UPLOAD" showClearButton="true"
-                                permittedExtensions = ".jpg,.png"
-                                />
+                                permittedExtensions=".jpg,.png"
+                    />
+                    <fileStorageUpload id="attachmentField" property="attachment"
+                                       showClearButton="true" uploadButtonIcon="UPLOAD"/>
                 </column>
             </form>
             <image id="photo"
@@ -51,6 +53,7 @@
                    scaleMode="CONTAIN"
                    alternateText=" "
             />
+            <browserFrame id="attachmentBrowserFrame" height="300px" width="300px"/>
         </hbox>
         <groupBox id="documentsBox" caption="msg://com.sample.drivers.entity/Driver.documents">
             <table id="documentsTable" dataContainer="documentsDc" width="100%" height="250px">

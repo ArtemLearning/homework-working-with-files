@@ -52,6 +52,7 @@
                 <column id="birthDate"/>
                 <column id="license.number"/>
                 <column id="license.expiryDate"/>
+                <column id="attachment"/>
             </columns>
             <simplePagination/>
             <buttonsPanel id="buttonsPanel"

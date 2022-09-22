@@ -1,5 +1,6 @@
 package com.sample.drivers.entity;
 
+import io.jmix.core.FileRef;
 import io.jmix.core.entity.annotation.EmbeddedParameters;
 import io.jmix.core.entity.annotation.JmixGeneratedValue;
 import io.jmix.core.metamodel.annotation.Composition;
@@ -50,6 +51,17 @@ public class Driver {
 
     @Column(name = "PHOTO")
     private byte[] photo;
+
+    @Column(name = "ATTACHMENT", length = 1024)
+    private FileRef attachment;
+
+    public FileRef getAttachment() {
+        return attachment;
+    }
+
+    public void setAttachment(FileRef attachment) {
+        this.attachment = attachment;
+    }
 
     public byte[] getPhoto() {
         return photo;
